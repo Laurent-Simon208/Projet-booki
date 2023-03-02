@@ -92,7 +92,7 @@ form{
 
 .container-formulaire label{
     background-color: #d9d9d9;
-    border-radius: 20% 0 0 20%;
+    border-radius: 35% 0 0 35%;
     padding: 15px;
 }
 .iconeDot{
@@ -533,6 +533,7 @@ form{
     body{
         width: 95%;
         margin: 0 auto;
+        height: auto;
     }    
     .acceuil-head{
         flex-direction: column;
@@ -595,8 +596,7 @@ form{
     .container-formulaire{
         width: 100%;
         height: 49px;
-        align-items: baseline;
-        margin-left: 5%;
+        margin-left: 3%;
     }
 
     .container-bouton{
@@ -606,9 +606,9 @@ form{
     .container-bouton-dot {
         display: block;
         height: 50px;
-        width: 12%;
+        width: 50px;
         background-color: #0065FC;
-        border-radius: 0% 30% 30% 0%;        
+        border-radius: 0% 35% 35% 0%; 
     }
     .bouton-dot{
         width: 100%;
@@ -617,6 +617,7 @@ form{
         background-color: #0065FC;
         border: #0065FC ;
         height: 100%;
+        border-radius: 0% 35% 35% 0%;   
     }
 
 
@@ -626,8 +627,11 @@ form{
         flex-direction: column;
         gap: 15px;
         width: 100%;
+        align-items: flex-start;
     }
-
+    .container-filtres h3{
+        margin-left: 3%;
+    }
 
     .flex-filtres{
         display: grid;
@@ -637,7 +641,7 @@ form{
     }
     .filtre{
         padding-left: 10px;
-        gap: 10px;
+        gap: 5px;
     }
     .flex-filtres p{
         font-size: 11px;
@@ -696,19 +700,18 @@ form{
         height: auto;
         padding: 0;
         background-color: white;
+
     }    
     #container-hebergement h2{
-        
+        margin-left: 4%;
     }
     .container-hebergement{
-
         width: 100%;
-        margin: auto 0;
+        margin: auto 0;       
     }
     .prem-ligne{
         flex-direction: column;
-
-
+        margin-bottom: 0;
     }
     .deux-ligne{
         flex-direction: column;
@@ -717,6 +720,62 @@ form{
         margin: 10px auto ;
         width: 90%;
         height: 199px;
+        border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+    }
+    .h3-heb{
+        font-size: 16px;
+    }
+    .heb-li-2{
+        font-size: 14px;
+    }
+    .h2-aff{
+        display: none;
+    }
 
+
+
+    #container-activites{
+        width: 100%;
+    }
+    .h2-acti{
+        font-size: 22px;
+        margin-bottom: 0px;
+        width: 30%;
+        margin-left: 6%;
+    }
+    .cont-activites{
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    
+    }
+    .card-activites{
+        width: 90%;
+        height: 190px;
+        margin: auto;
+        border-radius: 5% 5% 5% 5% / 10% 10% 10% 10%;
+    }
+    .card-activites img{
+        height: 134px;     
+    }
+    .h3-leg-acti{
+        font-size: 16px;
+    }
+
+
+    .footer{
+        background-color: #d9d9d9;
+        height: 100%;
+    }
+    .footer-bloc{
+        flex-direction: column;
+        height: 100%;
+    }
+    .fo-bloc{
+        margin-top: 20px;
+        margin-left: 4%;
+    }
+    .fo-bloc h3{
+        margin-bottom: 5px;
     }
 }
