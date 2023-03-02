@@ -494,7 +494,7 @@ form{
     
                 /*media activités*/
 
-                
+
     #container-activites{
         height: auto;
         margin-bottom: 69px;
@@ -523,4 +523,200 @@ form{
         padding-left: 6%;
     }
 
+}
+
+                /*media 768*/
+
+                @media screen and (max-width: 768px){
+                    /*acceuil nav*/
+    
+    body{
+        width: 95%;
+        margin: 0 auto;
+    }    
+    .acceuil-head{
+        flex-direction: column;
+        margin-top: 21px;
+        width: 100%;
+    }
+    .container-nav{
+        height: 63px;
+        width: 100%;
+        gap: 5px;
+        margin-bottom: 31px;
+    }
+    .flex-heb{
+        height: 63px;
+        line-height: 65px;
+        width: 50%;
+        border-bottom: 3px solid #d9d9d9;        
+    }
+    .flex-heb :hover{
+        border-bottom: 3px solid #0065fc;
+        border-top: 0px;
+        color: #0065fc;
+    }
+    .flex-acti{
+        height: 63px;
+        line-height: 65px;
+        width: 50%;
+        border-bottom: 3px solid #d9d9d9;  
+    }
+    .flex-acti :hover{
+        border-bottom: 3px solid #0065fc;
+        border-top: 0px;
+        color: #0065fc;
+    }
+    .container-nav p{
+        height: 63px;
+    }
+
+                /*présentation*/
+
+    .container-presentation{
+        width: 100%;
+        margin-left: 3%;
+    }
+    .h1-presentation{
+        font-size: 18px;
+        height: 57px;
+        width: 90%;
+    }
+    .h1-presentation h1{
+        width: 100%;
+    }
+    .p-presentation{
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+
+                /*Formulaire*/
+
+    .container-formulaire{
+        width: 100%;
+        height: 49px;
+        align-items: baseline;
+        margin-left: 5%;
+    }
+
+    .container-bouton{
+        display: none;
+    }
+
+    .container-bouton-dot {
+        display: block;
+        height: 50px;
+        width: 12%;
+        background-color: #0065FC;
+        border-radius: 0% 30% 30% 0%;        
+    }
+    .bouton-dot{
+        width: 100%;
+        font-size: 16px;
+        color: white;
+        background-color: #0065FC;
+        border: #0065FC ;
+        height: 100%;
+    }
+
+
+               /*filtres*/
+
+    .container-filtres{
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+
+    .flex-filtres{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .filtre{
+        padding-left: 10px;
+        gap: 10px;
+    }
+    .flex-filtres p{
+        font-size: 11px;
+    }
+    .flex-filtres i{
+        font-size: 21px;
+    }
+
+
+
+    .header-info{
+        align-items: first baseline;
+        width: 100%;
+    }
+    .header-info p{
+        font-size: 16px;
+        width: 90%;
+    }
+
+
+
+
+
+    .container-heb-pop{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .container-pop{
+        width: 100%;
+        height: 580px;
+        margin: 0;
+        border-radius: 0%;
+    }
+
+    .container-pop-media{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .card-populaire{
+        width: 90%;
+        margin: 0 auto;
+        height: 144px;
+    }
+    .leg-pop h3{
+        font-size: 16px;
+    }
+    .leg-pop p{
+        font-size: 14px;
+    }
+
+
+
+    #container-hebergement{
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        background-color: white;
+    }    
+    #container-hebergement h2{
+        
+    }
+    .container-hebergement{
+
+        width: 100%;
+        margin: auto 0;
+    }
+    .prem-ligne{
+        flex-direction: column;
+
+
+    }
+    .deux-ligne{
+        flex-direction: column;
+    }
+    .card-hebergement{
+        margin: 10px auto ;
+        width: 90%;
+        height: 199px;
+
+    }
 }
