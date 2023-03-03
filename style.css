@@ -43,8 +43,7 @@ body{
     align-items: center;
 }
 .container-nav p{
-    color: black;
-    font-size: 1.1em;
+    font-size: 16px;
 }
 .flex-heb{
     height: 100%;
@@ -71,63 +70,72 @@ body{
                 /*header présentation*/
 
 .container-presentation h1{
-    font-size: 1.4em;
+    font-size: 22px;
     margin-bottom: 0px;
-    width: 575px;
-    height: 26px;
 }
 .container-presentation p{
     margin-top: 8px;
-    font-size: 1.1em;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
                 /*header formulaire*/
-form{
-    display: flex;
-}
-.container-formulaire{
-    display: flex;
-}
 
-.container-formulaire label{
-    background-color: #d9d9d9;
-    border-radius: 35% 0 0 35%;
-    padding: 15px;
-}
-.iconeDot{
-    width: 14px;
-    height: 18px;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-.container-label input{
-    border: 1px solid #d9d9d9;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 14px;
-    padding-top: 13px;
-}
-
-.container-bouton{
-    color: white;
-    background-color: #0065FC;
-    border-radius: 0 10% 10% 0 / 0 30% 30% 0;
-    padding: 13px;
-    
-}
-.container-bouton input{
-    background-color: #0065FC;
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 0px;
-    cursor: pointer;
-}
 .container-bouton-dot{
     display: none;
 }
+.container-formulaire{
+    height: 49px;
+}
+.cont-form{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 418px;
+
+}
+.container-label{
+    display: flex;  
+    width: 286px;
+    height: 100%;
+    border: #d9d9d9 1px solid;
+    border-radius: 5% 0% 0% 5% / 30% 0% 0% 30%;
+    overflow: hidden;
+}
+.iconeDot{
+    height: 100%;
+    width: 50px;
+    background-color: #d9d9d9;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+}
+.container-label input{
+    width: 236px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 17px;
+    border: 0;
+
+}
+.container-bouton{
+    width: 132px;
+    height: 100%;
+
+}
+.container-bouton input{
+    height: 100%;
+    width: 100%;
+    background-color: #0065fc;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0% 12% 12% 0% / 0% 35% 35% 0%;
+}
+
 
                 /*Header Filtres*/
 
@@ -160,7 +168,7 @@ form{
     color: #0065FC;
 }
 
-
+                /*Header Info*/
 
 .header-info{
     display: flex;
@@ -472,14 +480,12 @@ form{
     .footer-bloc{
         height: 225px;       
     }
-    .fo-bloc{
-        width: 100%;
-    }
     .fo-bloc h3{
         font-size: 18px;
     }
     .fo-bloc li{
         font-size: 16px;
+        line-height: 200%;
     }
 }
                 /*Media queries 992px*/
@@ -527,7 +533,7 @@ form{
 
                 /*media 768*/
 
-                @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
                     /*acceuil nav*/
     
     body{
@@ -778,4 +784,5 @@ form{
     .fo-bloc h3{
         margin-bottom: 5px;
     }
+    
 }
