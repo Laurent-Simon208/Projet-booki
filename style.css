@@ -497,7 +497,6 @@ body{
         margin: 0 auto;
     }
 
-    
                 /*media activités*/
 
 
@@ -541,6 +540,12 @@ body{
         margin: 0 auto;
         height: auto;
     }    
+    img {
+        width: 100%;
+    }
+
+                /*header media*/
+
     .acceuil-head{
         flex-direction: column;
         margin-top: 21px;
