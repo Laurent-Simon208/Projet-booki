@@ -648,16 +648,18 @@ body{
         grid-template-columns: 45% 45%;
         gap: 15px;
         justify-content: center;
+        text-align: center;
     }
     .filtre{
         padding-left: 10px;
-        gap: 5px;
+        gap: 3px;
     }
     .flex-filtres p{
         font-size: 11px;
     }
     .flex-filtres i{
         font-size: 21px;
+        width: 24px;
     }
 
 
