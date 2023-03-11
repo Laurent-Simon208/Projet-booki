@@ -8,7 +8,8 @@ html{
     text-decoration: none;
     max-width: 1400px;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;    
+    font-family: 'Raleway', sans-serif;   
+ 
 }
 img{
     object-fit: cover;
@@ -19,7 +20,7 @@ a {
 }
 body{
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
 }
             /*header*/
 
@@ -115,12 +116,10 @@ body{
     font-weight: 700;
     padding-left: 17px;
     border: 0;
-
 }
 .container-bouton{
     width: 132px;
     height: 100%;
-
 }
 .container-bouton input{
     height: 100%;
@@ -146,7 +145,7 @@ body{
 }
 .flex-filtres{
     display: flex;
-    gap: 5%;
+    gap: 3%;
     width: 100%;
 }
 .flex-filtres p{
@@ -160,10 +159,14 @@ body{
     gap: 15px;
     padding: 10px 20px;
     border-radius: 30px;
+    cursor: pointer;
 }
 .flex-filtres i{
     font-size: 22px;
     color: #0065FC;
+}
+.filtre:hover{
+    background-color: #deebff;
 }
 
                 /*Header Info*/
@@ -378,7 +381,12 @@ body{
     height: 225px;
     margin-top: 60.51px;
     background-color: #f2f2f2;
-    font-size: 1.2em;
+}
+.footer h3{
+    font-size: 18px;
+}
+.footer li{
+    font-size: 16px;
 }
 .footer-bloc{
     display: flex;
@@ -542,7 +550,6 @@ body{
         height: auto;
     }    
 
-
                 /*header media*/
 
     .acceuil-head{
@@ -592,6 +599,7 @@ body{
         font-size: 18px;
         height: 57px;
         width: 90%;
+        height: auto;        
     }
     .h1-presentation h1{
         width: 100%;
@@ -604,15 +612,13 @@ body{
                 /*Formulaire*/
 
     .container-formulaire{
-        width: 100%;
+        width: 95%;
         height: 49px;
         margin-left: 3%;
     }
-
     .container-bouton{
         display: none;
     }
-
     .container-bouton-dot {
         display: block;
         height: 50px;
@@ -642,10 +648,9 @@ body{
     .container-filtres h3{
         margin-left: 3%;
     }
-
     .flex-filtres{
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 47% 47%;
         gap: 15px;
         justify-content: center;
         text-align: center;
@@ -661,9 +666,6 @@ body{
         font-size: 21px;
         width: 24px;
     }
-
-
-
     .header-info{
         align-items: first baseline;
         width: 100%;
@@ -751,7 +753,7 @@ body{
     .h2-acti{
         font-size: 22px;
         margin-bottom: 0px;
-        width: 30%;
+        width: 33%;
         margin-left: 6%;
     }
     .cont-activites{
@@ -776,18 +778,43 @@ body{
                 /*footer*/
     .footer{
         background-color: #d9d9d9;
-        height: 100%;
+        height: 501px;
     }
     .footer-bloc{
         flex-direction: column;
-        height: 100%;
+        gap: 0px;
     }
     .fo-bloc{
-        margin-top: 20px;
         margin-left: 4%;
     }
     .fo-bloc h3{
         margin-bottom: 5px;
     }
     
+}
+
+                /*Media queries pour les plus petits smartphones (en testant sur plusieurs ça cassait à certains endroits*/
+
+@media screen and (max-width: 379px){
+    .container-label input{
+        width: 80%;
+        padding-left: 2%;        
+    }
+
+}
+@media screen and (max-width: 341px){
+    .filtre p{
+        font-size: 9px;
+    }
+    
+}
+
+@media screen and (max-width: 275px){
+    .nom-prix h3{
+        font-size: 14px;
+    }
+    .nom-prix p{
+        font-size: 12px;
+    }
+
 }
